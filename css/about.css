@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.max_width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/* navbar styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: crimson;
+  font-family: sans-serif;
+}
+.navbar .max_width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo a span {
+  color: blue;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 20px;
+  margin-left: 10px;
+}
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: blue;
+}
+.active {
+  background-color: blue;
+}
+section {
+  padding: 80px 0;
+}
+
+.about {
+  font-family: "poppins", sans-serif;
+  background-color: #fff;
+}
+.about .tittle {
+  position: relative;
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
+}
+.about .tittle::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  background: #111;
+  width: 180px;
+  height: 3px;
+  transform: translateX(-50%);
+}
+.about .tittle::after {
+  content: "What i know";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  font-size: 20px;
+  color: #fff;
+  background: crimson;
+  width: 180px;
+  transform: translateX(-50%);
+}
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: right;
+  justify-content: space-between;
+}
+.about .about-content .left {
+  width: 45%;
+}
+.about .about-content .left img {
+  object-fit: cover;
+  border-radius: 6px;
+}
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: crimson;
+}
+.about .about-content .right p {
+  text-align: justify;
+}
+.about .about-content .right a {
+  display: inline-block;
+  background-color: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.about .about-content .right a:hover {
+  color: crimson;
+  background: none;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
